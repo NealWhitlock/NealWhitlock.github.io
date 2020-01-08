@@ -37,9 +37,7 @@ A cursory view of this graph shows much more than the step counts graph. Of note
 
 The scale of these graphs is small because they cover the entirety of 2019 so I prepared a couple, focused graphs. This first one shows the months of May and June and points out the drop associated with the cluster of high calorie burn days and a lower RHR.
 
-<p align="center">
-  <img width="386" height="306" src="img/2019-Active-Calories-and-RHR-Focus-1.png">
-</p>
+
 
 This next graph surrounds September and shows that of the six high calories burned days that five of them were following by drops in RHR.
 
