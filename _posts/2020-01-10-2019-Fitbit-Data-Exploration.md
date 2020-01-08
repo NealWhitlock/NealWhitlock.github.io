@@ -39,12 +39,6 @@ The scale of these graphs is small because they cover the entirety of 2019 so I 
 
 
 
-This next graph surrounds September and shows that of the six high calories burned days that five of them were following by drops in RHR.
-
-<p align="center">
-  <img width="386" height="306" src="img/2019-Active-Calories-and-RHR-Focus-2.png">
-</p>
-
 ### Moving Forward
 
 This look at my RHR and how my activity over the course of 2019 impacted it has been quite enlightening. By no means have I exhausted this investigation nor will it end for me here. I still have many questions to answer. Why did one of these days in September not experience a similar drop in RHR? I'm not sure that is even a question I can answer but it has made me realize that I have more to track. I also need to experiment to try intentionally manipulating the data. By that I mean to try varying the high burn days and rest periods to see what happens. There are also other thangs that influence RHR such as water and electrolyte levels and sleep. I intend to track these better over the course of 2020 and beyond to accumulate even more data to explore. I would also like to look into getting a device that measures heart rate variability (**HRV**). Let's say that your RHR is 60 BPM. You might think that means your heart is beating once per second but it's really only beating once per second on average. HRV measures the variation in time between beats. I would love to be able to see that data for myself.
