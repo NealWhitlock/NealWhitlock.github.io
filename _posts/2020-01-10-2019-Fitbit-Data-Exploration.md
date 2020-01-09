@@ -22,7 +22,7 @@ After these restful days, usually just one, I noticed that within the next day o
 ### Step It Up
 A good, though not complete, way of looking at your activity levels is to check how many steps you take in a day. This can be an overview of how much you were moving around rather than being sedentary on a couch or chair. In my investigation it seemed to only make sense to begin there. Here is a graph of my 2019 year of daily steps counts graphed along with my RHR.  
 
-![Steps Plot](/img/2019-Steps-and-RHR.png)  
+![Steps Plot 2](https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/2019-Steps-and-RHR-2.png?raw=true)
 
 Of interest to me for this story is the spike in steps per day that occurs in May and precedes a sharp drop in RHR in June to the lowest RHR of the year (at 50 BPM on June 10). Additionally, there appears to be some kind of relationship in the first half of the year of the daily step count beginning low, the RHR beginning higher, and the two changing over time. As the daily step count increases the RHR appears to decrease. Aside from these there does not appear to be a major connection between step counts and RHR.
 
@@ -31,7 +31,7 @@ As stated above, while the amount of walking I did in 2019 did increase from pre
 
 Here is a graph of my active calories tracked against my RHR.  
 
-![Calories Plot](/img/2019-Active-Calories-and-RHR.png)  
+![Calories Plot 2](https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/2019-Active-Calories-and-RHR-2.png?raw=true)
 
 A cursory view of this graph shows much more than the step counts graph. Of note are the two overall increases in active calories burned beginning in February to the end of May and then again from July to October. During both of these periods there seems to be a general decline in the RHR. Note the increase of days at the end of May with a high amount of calories burned as compared to the fewer days of high steps counts. Additionally, around September are many days of very high calorie burn that do not show up in the step count graph.
 
