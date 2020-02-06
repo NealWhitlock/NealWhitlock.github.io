@@ -9,7 +9,7 @@ About a month ago I [posted a blog](https://nealwhitlock.github.io/2020-01-10-20
 From that exploration I noted that my activity calories (the calories I burned above my BMR through moving around) appeared to impact my RHR over the next few days. Below is a figure showing the amount of activity calories I burned in a day along the x-axis, how many minutes in that day were considered very active (raising my heart rate to cardio levels and above) along the y-axis, and color coded as what my RHR was the next day. 
 
 <p align="center">
-  <img width="700" height="450" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/day_1_rhr_minutes_very_active_to_day_2_rhr.png">
+  <img width="700" height="450" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/day_1_rhr_minutes_very_active_to_day_2_rhr.png?raw=true">
 </p>
 
 While not clearly separated into clusters, it appears that the upper portion of this graph contains a higher concentration of pink to purple points (low RHR) while the bottom portion has more yellow to orange points (high RHR). What this says to me is that there is likely a connection between the intensity of my exercising (more very active minutes) and a lower RHR.
@@ -19,19 +19,19 @@ While not clearly separated into clusters, it appears that the upper portion of 
 To better investigate this connection I added 9 months of data from 2018 and 1 month of 2020 for a total of 22 months of Fitbit data. Early on I noticed despite what features I engineered in my dataset that by far the largest predictor of what my RHR would be is what my RHR was. That makes some sense as there would likely be a problem you should seek professional help with if your heart regularly made jumps from, say, 55 BPM to 65 BPM one day and then back again. This can be seen in the figure below.
 
 <p align="center">
-  <img width="700" height="450" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/day_1_rhr_activity_calories_to_day_2_rhr.png">
+  <img width="700" height="450" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/day_1_rhr_activity_calories_to_day_2_rhr.png?raw=true">
 </p>
 
 Here I have plotted my RHR and activity calories for a given day while the color represents my RHR for the day after. In general, having a low RHR tends to have a similar RHR the next day and the same goes for a higher RHR having a high RHR the next day. The connections begin to separate after a few days, though, as my RHR tended to move around a bit. Here is a figure just like the one above except that the colors match to my RHR 4 days after instead of just the next day.
 
 <p align="center">
-  <img width="700" height="450" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/day_1_rhr_activity_calories_to_day_5_rhr.png">
+  <img width="700" height="450" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/day_1_rhr_activity_calories_to_day_5_rhr.png?raw=true">
 </p>
 
 The colors are beginning to mix with each other, meaning that if I tried to predict my RHR several days out from a given day I would quite likely be wrong. I would need to factor in the days leading up to a predicted day. At least, to train my model I would. Here I have a figure that has the RHR of two consecutive days plotted against each other with the color coded to the RHR of the third day.
 
 <p align="center">
-  <img width="700" height="450" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/day_1_rhr_and_day_2_rhr.png">
+  <img width="700" height="450" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/day_1_rhr_and_day_2_rhr.png?raw=true">
 </p>
 
 ### Model Time
@@ -47,7 +47,7 @@ The best random forest model I came up with after tuning the hyperparameters had
 This graph shows the actual RHR for day 5 and both of the predictions for linear regression (red) and random forest (green).
 
 <p align="center">
-  <img width="707" height="604" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/predictions_and_actual.png">
+  <img width="707" height="604" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/predictions_and_actual.png?raw=true">
 </p>
   
 ### Conclusion
@@ -61,7 +61,7 @@ I know that I haven't yet even published this blog post so adding an addendum is
 You see, I was ready to call this blog post good and I was feeling pleased with myself about having error rates that were better than the baseline average. Before publishing I decided to walk away and go on a walk. I was pondering on the lag that was showing in the comparison graph above and I couldn't figure out why it was there; what in **both** of my models would cause that to show up? I'm still pondering that but then I recalled that I could try shifting my predictions backward to get rid of the lag and see how that impacted my predictions and errors.
 
 <p align="center">
-  <img width="707" height="604" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/predictions_and_shift.png">
+  <img width="707" height="604" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/predictions_and_shift.png?raw=true">
 </p>
 
 That is much better! I also decided to round my predictions since the values for my RHR from Fitbit are integers and check the MAE for both linear regression and random forest. They are an order of magnitude better than the baseline, now.
