@@ -50,7 +50,7 @@ I know that I haven't yet even published this blog post so adding an addendum is
 
 You see, I was ready to call this blog post good and I was feeling pleased with myself about having error rates that were better than the baseline average. Before publishing I decided to walk away and go on a walk. I was pondering on the lag that was showing in the comparison graph above and I couldn't figure out why it was there; what in **both** of my models would cause that to show up? I'm still pondering that but then I recalled that I could try shifting my predictions backward to get rid of the lag and see how that impacted my predictions and errors.
 
-![Shifted Predictions](https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/predictions_and_shift.png)
+![Shifted Predictions](img/predictions_and_shift.png)
 
 That is much better! I also decided to round my predictions since the values for my RHR from Fitbit are integers and check the MAE for both linear regression and random forest. They are an order of magnitude better than the baseline, now.
 
