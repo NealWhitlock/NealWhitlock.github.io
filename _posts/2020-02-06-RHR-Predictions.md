@@ -71,3 +71,7 @@ Linear Regression MAE: **0.205 BPM**
 Random Forest MAE: **0.197 BPM**
 
 I'm not entirely sure right now why these are so much better so I am not ready to call this project complete. It is something I will be returning to in the future when I have more knowledge and experience.
+
+# Addendum 2
+
+I just realized why the lag was appearing in my models. When I use my model to predict the RHR of the following day I started with October 1st. It then predicted the RHR for October 2nd and became the first prediction. However, the test set that I compared these predictions to started with a RHR value for October 1st, meaning all of my error analyses were off by one day. Oh how I wish I had realized this much earlier in my investigations.
