@@ -96,10 +96,16 @@ In order to check this process out I saved the first fifty point from the datase
 
 With a different dataset with 6 clusters that I ran through this algorithm the first fifty points of X were assigned clusters in the following way (the first point was put into cluster 5, second point in cluster 4...):
 
-[5. 4. 3. 3. 0. 0. 0. 0. 1. 3. 2. 4. 2. 2. 3. 0. 4. 1. 5. 4. 1. 2. 1. 2. 4. 5. 1. 2. 3. 0. 0. 3. 1. 2. 2. 3. 5. 1. 5. 3. 1. 2. 1. 2. 1. 4. 1. 3. 5. 2.]
+[0. 0. 3. 3. 4. 4. 4. 2. 2. 3. 1. 0. 1. 1. 3. 4. 0. 2. 0. 0. 5. 1. 2. 1. 0. 0. 5. 1. 3. 4. 2. 3. 5. 1. 1. 3. 0. 5. 0. 3. 5. 1. 2. 1. 5. 0. 5. 3. 0. 1.]
 
 I then ran those fifty points through the predict method and they were assigned the following clusters:
 
-[5. 4. 3. 3. 0. 0. 0. 0. 1. 3. 2. 4. 2. 2. 3. 0. 4. 1. 5. 4. 1. 2. 1. 2. 4. 5. 1. 2. 3. 0. 0. 3. 1. 2. 2. 3. 5. 1. 5. 3. 1. 2. 1. 2. 1. 4. 1. 3. 5. 2.]
+[0. 0. 3. 3. 4. 4. 4. 2. 2. 3. 1. 0. 1. 1. 3. 4. 0. 2. 0. 0. 5. 1. 2. 1. 0. 0. 5. 1. 3. 4. 2. 3. 5. 1. 1. 3. 0. 5. 0. 3. 5. 1. 2. 1. 5. 0. 5. 3. 0. 1.]
 
 Based on the best centroids found in fit the predict method returned the same clustering for the test data points. 
+
+However, when I import KMeans from scikit-learn and fit that model on my dataset of X and run a prediction on X_test I get the following returns:
+
+[5 3 0 0 4 4 4 4 1 0 2 3 2 2 0 4 3 1 5 3 1 2 1 2 3 5 1 2 0 4 4 0 1 2 2 0 5 1 5 0 1 2 1 2 1 3 1 0 5 2]
+
+I wouldn't expect the cluster numbers to match up (after all, there would only be a 1 in 6! way of that happening). But the structure should still be the same and it's not. This requires investigating.
