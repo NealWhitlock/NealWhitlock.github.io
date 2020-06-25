@@ -108,4 +108,20 @@ However, when I import KMeans from scikit-learn and fit that model on my dataset
 
 [5 3 0 0 4 4 4 4 1 0 2 3 2 2 0 4 3 1 5 3 1 2 1 2 3 5 1 2 0 4 4 0 1 2 2 0 5 1 5 0 1 2 1 2 1 3 1 0 5 2]
 
-I wouldn't expect the cluster numbers to match up (after all, there would only be a 1 in 6! way of that happening). But the structure should still be the same and it's not. This requires investigating.
+I wouldn't expect the cluster numbers to match up (after all, there would only be a 1 in 6! way of that happening). But the structure should still be the same and it's not. 
+
+What is likely happening here is that these clusters are not distinct enough and my punishment algorithm is not as refined as the scikit-learn algorithm. Here is a graph of all of the points in black with the test points in red. This is generated off of 6 random clusters.
+
+<p align="center">
+  <img width="721" height="466" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/6_clusters.png?raw=true">
+</p>
+
+Two sets of two clusters are tightly packed together and distinguishing those as clusters is just not matching up between the package Kmeans and my Kmeans. If I lower the cluster count back down and have clearly distinct clusters I get a match in cluster assignment (though, again, the labels are different).
+
+<pre>
+My grouping:  [3 3 0 3 1 0 0 0 1 2 1 1 2 0 0 0 1 0 3 1 0 3 2 3 0 0 3 3 0 0 0 3 1 0 2 2 0 1 1 2 1 1 0 0 1 1 1 1 0 2]
+
+My predict:   [3 3 0 3 1 0 0 0 1 2 1 1 2 0 0 0 1 0 3 1 0 3 2 3 0 0 3 3 0 0 0 3 1 0 2 2 0 1 1 2 1 1 0 0 1 1 1 1 0 2]
+
+SK predict:   [0 0 1 0 2 1 1 1 2 3 2 2 3 1 1 1 2 1 0 2 1 0 3 0 1 1 0 0 1 1 1 0 2 1 3 3 1 2 2 3 2 2 1 1 2 2 2 2 1 3]
+</pre>
