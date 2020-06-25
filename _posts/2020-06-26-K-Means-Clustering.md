@@ -110,7 +110,7 @@ However, when I import KMeans from scikit-learn and fit that model on my dataset
 
 I wouldn't expect the cluster numbers to match up (after all, there would only be a 1 in 6! way of that happening). But the structure should still be the same and it's not. 
 
-What is likely happening here is that these clusters are not distinct enough and my punishment algorithm is not as refined as the scikit-learn algorithm. Here is a graph of all of the points in black with the test points in red. This is generated off of 6 random clusters.
+What is likely happening here is that these clusters are not distinct enough and my punishment algorithm is not the same as the scikit-learn algorithm. When each of the algorithms tries to find appropriate clusters the exact location of each centroid can be off. Even if this was only a slight deviation then points within each cluster could easily belong to a different grouping. Here is a graph of all of the points in black with the test points in red. This is generated off of 6 random clusters.
 
 <p align="center">
   <img width="721" height="466" src="https://github.com/NealWhitlock/NealWhitlock.github.io/blob/master/img/6_clusters.png?raw=true">
