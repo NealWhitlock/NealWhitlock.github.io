@@ -17,20 +17,20 @@ A couple of things about me:
 I have two amazing kids that can be the highlight of my day. Especially when they say ridiculous things like the following:
 
 
-Son: Can I have more treat?
-Me: I've already given you an answer.
+Son: Can I have more treat?  
+Me: I've already given you an answer.  
 Daughter: It means it's no.
 
 
 Son: The Paw Patrol's got Baby Jesus!
 
 
-Potty Training Video: Wash your hands for 20 seconds.
-Son: For 20 seconds!?!?
-Me: Yep, you're supposed to.
+Potty Training Video: Wash your hands for 20 seconds.  
+Son: For 20 seconds!?!?  
+Me: Yep, you're supposed to.  
 Son: Not in our world.
 
 
-(The first snowstorm of the season.)
+(The first snowstorm of the season.)  
 Daughter: Daddy, it's wintering out there!
 
